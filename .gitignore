@@ -1,4 +1,8 @@
+node_modules
+server
+.env
 
+src/images
 
 
 # Logs

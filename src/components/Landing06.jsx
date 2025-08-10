@@ -11,11 +11,14 @@ const Landing06 = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    
     emailjs
-      .sendForm('service_iwfb1yn', 'template_6tuf06d', form.current, {
-        publicKey: 'VJQlUxGdRaV8KQVsd',
-      })
+      .sendForm( import.meta.env.VITE_SERVICE_ID,
+  import.meta.env.VITE_TEMPLATE_ID,
+  form.current,
+  {
+    publicKey: import.meta.env.VITE_PUBLIC_KEY, // ✅ Correct key name
+  })
       .then(
         () => {
           // toast.success('Thanks of Contacting');

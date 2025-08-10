@@ -41,10 +41,10 @@ const Cards3Three = () => {
           slidesToShow: 2,
           slidesToScroll: 1
         }
-      }
-    ],
+      },
+    // ],
 
-    responsive: [
+    // responsive: [
       {
         breakpoint: 768, // For small screens
         settings: {
