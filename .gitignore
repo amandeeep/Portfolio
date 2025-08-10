@@ -1,9 +1,4 @@
-src/images
-.env
-node_modules
-server
-package-lock.json
-package.json
+
 
 
 # Logs
