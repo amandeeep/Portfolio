@@ -1,4 +1,4 @@
-./src/images
+src/images
 .env
 node_modules
 server
