@@ -3,6 +3,7 @@ import HighlightText from '../Reuse/HighlightText';
 import Button from '../Reuse/Button';
 
 import amandeep from "../images/amandeep.png"
+
 import { motion } from 'framer-motion';
 
 import Landing03 from './Landing03';

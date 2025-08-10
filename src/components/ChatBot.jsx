@@ -27,7 +27,7 @@ const ChatBot = () => {
     
 
 const response = await axios.post(
-  'https://portfolio-anand-swaroop-guptas-projects.vercel.app/api/chat',
+  'https://portfolio-oo2o.vercel.app/',
   { question: trimmedQuestion }
 );
 
