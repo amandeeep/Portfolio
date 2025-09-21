@@ -17,7 +17,7 @@ const Landing04 = () => {
             <div className="right ">
                 <button className='flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 cursor-pointer  transition-all ease-in-out duration-500 hover:scale-110 pr-[20px]'>
                 <FaEarthAfrica className=' transition-all ease-in-out duration-500 hover:scale-110 '/>
-                <a href="https://drive.google.com/file/d/1eoGbgGhTdVKKGmRSQ3A3jJPdiL-CjRry/view?usp=sharing" target='_main'><p className='font-[400] text-[15px] '>Download My Resume</p></a>
+                <a href="https://drive.google.com/file/d/1L3a1HTIQ3drmFbok0_sXDPhmvrt5c67T/view?usp=drive_link" target='_main'><p className='font-[400] text-[15px] '>Download My Resume</p></a>
                 </button>
                  
             </div>

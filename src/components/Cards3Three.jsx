@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Card = ({logo,kuchh,photo,Name})=>(
 
     <div className="bg-[#EAFFFF] shadow-3xl rounded-xl p-1 text-black w-70 text-center pt-[10px] items-centre transform transition-transform duration-300 md:80 hover:scale-95 border border-green border-solid ">
+     
         <p className="logo pl-5 flex flex-row pt-2 pb-4">{(logo)} {(logo)} {(logo)} {(logo)} {(logo)}</p>
         <h1 className='text-left pl-3'>{kuchh}</h1>
         <div className="shivam flex ">
@@ -102,7 +103,8 @@ const Cards3Three = () => {
   settings.nextArrow = <CustomNextArrow />;
 
     return (
-        <div className="mt-20  m-auto py-8  ">
+        <div id="feedback" className="mt-20  m-auto py-8  ">
+         
           <Slider {...{ ...settings, autoplay: true, autoplaySpeed: 3000, infinite: true }}> {/* Added infinite loop */}
           {card_new.map((cardss, index) => (
             <Card

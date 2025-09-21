@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-
+import { Link as ScrollLink } from 'react-scroll';
 import { FaLinkedin } from "react-icons/fa6"
 
 import { FaHeart } from "react-icons/fa";
@@ -20,21 +20,23 @@ const Landing07 = () => {
 
      <div className="middle "> 
      <ul className='flex max-[400px]:flex-col text-center cursor-pointer  gap-3 sm:gap-0 mt-5 mb-3 flex-row'>
-          <Link to="/">
+          
+          <ScrollLink to="home" smooth={true} duration={700} offset={-70}>
             <li  className='sm:p-3 p-0 hover:underline '>Home</li>
-            </Link>
+            
+            </ScrollLink>
 
-            <Link to="/projects">
+            <ScrollLink to="projects" smooth={true} duration={700} offset={-70}>
             <li  className='sm:p-3 p-0 hover:underline '>My Projects</li>
-            </Link>
+            </ScrollLink>
 
-            <Link to="/academics">
+           <ScrollLink to="academicsResult" smooth={true} duration={700} offset={-70}>
             <li  className='sm:p-3 p-0 hover:underline '>Academics</li>
-            </Link>
+            </ScrollLink>
 
-            <Link to="/feedbacks">
+            <ScrollLink to="feedbacks" smooth={true} duration={700} offset={-70}>
             <li  className='sm:p-3 p-0 hover:underline '>Feedbacks</li>
-            </Link>
+            </ScrollLink>
             
         </ul>
         

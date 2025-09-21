@@ -31,7 +31,7 @@ const Landing06 = () => {
   };
 
   return (
-    <div className="text-center items-center">
+    <div id="form" className="text-center items-center">
       <div className="upper text-center items-center pt-[40px]">
         <p className="font-[500]">Get In Touch</p>
         <h1 className="text-3xl font-[650]">Contact Me</h1>
@@ -89,6 +89,9 @@ const Landing06 = () => {
                   <option value="css">CSS</option>
                   <option value="javascript">JavaScript</option>
                   <option value="react">React</option>
+                  <option value="react">Express</option>
+                  <option value="react">Node.js</option>
+                  <option value="react">MonogoDB</option>
                 </select>
               </div>
               <div className="sm:col-span-2">

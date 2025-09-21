@@ -48,7 +48,7 @@ const Navbar = ({ toggle, setToggle }) => {
         <button className="md:hidden text-2xl text-white" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
-        <ScrollLink to="contact" smooth={true} duration={700} offset={-70}>
+        <ScrollLink to="form" smooth={true} duration={700} offset={-70}>
           <button className="hidden md:flex bg-white px-4 py-2 rounded-sm text-black hover:scale-105 transition">
             Contact Me
           </button>

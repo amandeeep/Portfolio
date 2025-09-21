@@ -9,7 +9,7 @@ const SplashScreen = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setFadeOut(true);
-        }, 500); // Show splash screen for 3 seconds
+        }, 2100); // Show splash screen for 3 seconds
         return () => clearTimeout(timer);
     }, []);
 

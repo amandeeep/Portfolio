@@ -16,8 +16,8 @@ return (
 
      <div className="right flex flex-col justify-center pl-6 md:w-1/2 w-full mt-4 md:mt-0 ">
           <h1 className='text-3xl text-purple-800 pb-3 font-bold text-center md:text-left  '>About Me</h1>
-          <p>Aspiring IT professional with expertise in Java, MongoDB, and Web Development. Recognized for strong academic
-performance and analytical skills. Passionate about problem-solving and front-end development. Aiming to apply my
+          <p>Aspiring IT professional with expertise in Java, DSA and Web Development. Recognized for strong academic
+performance and analytical skills. Passionate about problem-solving and MERN development. Aiming to apply my
 skills in a challenging environment to develop efficient and scalable solutions.</p>
      </div>
 

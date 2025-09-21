@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import one from "../components/pdf/infosys01.png"
 import two from  "../components/pdf/youtube01.png"
 import three from "../components/pdf/infosys02.png"
+import four from "../components/pdf/oracle.png"
 
 
 
@@ -33,6 +34,14 @@ const Data = [
     button:"Download ->",
     link:"https://drive.google.com/file/d/1XFPKBdTTQB6cF4G8g9RwM521o2413wnR/view?usp=sharing"
   },
+
+  {
+    title: "Generative AI Professional",
+    description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque obcaecati fuga illo, nisi id officiis fugit eum cu",
+    image: four,
+    button:"Download ->",
+    link:"https://drive.google.com/file/d/1XC2sKQBWKhd9ZHlVMtQg7_M-vCcPVw4x/view?usp=drive_link"
+  },
  
 ];
 
@@ -43,7 +52,8 @@ const Data = [
 
 const Certificates = () => {
 return (
-    <div>
+    <div id='certificates'>
+      
         <div className="upper pl-20 pt-10">
             <h1 className='text-3xl font-bold'>Certificates</h1>
             <p className='text-2xl font-bold'>and Achivements</p>

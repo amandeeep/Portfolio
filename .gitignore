@@ -1,7 +1,7 @@
 node_modules
 server
 .env
-
+server/.env
 
 
 

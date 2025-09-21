@@ -10,6 +10,7 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 
 const Card = ({ title, description, image, dribble,link }) => (
   <div className="bg-white shadow-2xl rounded-2xl p-1  w-80 text-center items-centre transform transition-transform duration-300 hover:scale-105  ">
+    
     <img
       src={image}
       alt={title}
@@ -27,10 +28,11 @@ const Card = ({ title, description, image, dribble,link }) => (
  
   </div>
 );
-
+// card for projects
 const Cards2Two = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-[80px] py-8 ">
+    <div id="project" className="flex flex-wrap justify-center gap-[80px] py-8 ">
+      
       {cardDataAgain.map((card, index) => (
         <Card
           key={index}
