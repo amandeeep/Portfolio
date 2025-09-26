@@ -178,16 +178,45 @@ const ChatBot = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chat`, {
+      // const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chat`, {
+      
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({ question: trimmed }),
+      // });
+
+      // const data = await response.json();
+      // const text = data.answer || 'No response';
+
+
+      // no need for this backend code
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-2.5-pro:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ question: trimmed }),
+        body: JSON.stringify({
+          contents: [
+            // {
+            //   role: 'system',
+            //   parts: [
+            // {
+            //   text: 'Respond with no more than 40 words unless the user explicitly asks for a longer or detailed answer.',
+            // },
+            //   ]   
+            // },
+            {
+              role: 'user',
+              parts: [{ text: trimmed }],
+            },
+          ],
+        }),
       });
 
-      const data = await response.json();
-      const text = data.answer || 'No response';
+const data = await response.json();
+const text = data?.candidates?.[0]?.content?.parts?.[0]?.text || 'No response';
 
       setMessages(prev => [...prev, { text: text.trim(), sender: 'bot' }]);
     } catch (error) {
