@@ -1,6 +1,6 @@
 import React from 'react'
 import photoTwo from "../images/photoTwo.png" // Adjust the path based on the actual location of the image
-import amandeep02 from "../images/amandeep02.png" // Adjust the path based on the actual location of the image
+import amandeep02 from "../images/amandeep03.png" // Adjust the path based on the actual location of the image
 const Landing03 = () => {
 return (
       <> 
@@ -11,7 +11,7 @@ return (
     
      <div className="left py-auto px-auto hidden sm:flex md:w-1/2 w-full">
           <img src={amandeep02} alt='About Me'
-          className='sm:h-[400px] h-[300px] mx-auto'/>
+          className='sm:h-[600px] h-[600px] mx-auto'/>
      </div>
 
      <div className="right flex flex-col justify-center pl-6 md:w-1/2 w-full mt-4 md:mt-0 ">
@@ -23,7 +23,7 @@ skills in a challenging environment to develop efficient and scalable solutions.
 
      <div className="left py-10 px-auto  sm:hidden md:w-1/2 w-full">
           <img src={amandeep02} alt='About Me'
-          className='sm:h-[400px] h-[300px] mx-auto'/>
+          className='sm:h-[500px] h-[600px] mx-auto'/>
      </div>
 
       
